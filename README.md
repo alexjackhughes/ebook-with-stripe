@@ -1,4 +1,4 @@
-# Template Application
+# eBook using Node.js + Stripe API
 
 Node.js application that uses the Stripe API.
 
