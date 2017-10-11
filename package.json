@@ -1,0 +1,17 @@
+{
+  "name": "ebookseller",
+  "version": "1.0.0",
+  "description": "An app to sell e-books using the Stripe API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Alexander Jack Hughes",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^5.1.1"
+  }
+}

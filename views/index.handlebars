@@ -1,0 +1,33 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-4 mt-3 pt-5">
+                Web Development eBook
+            </h1>
+            <p class="lead">Learn web development front to back</p>
+            <form class="" action="/charge" method="POST">
+                <script
+                    src="https://checkout.stripe.com/checkout.js"
+                    class="stripe-button"
+                    data-key="{{stripePublishableKey}}"
+                    data-amount="2900"
+                    data-name="Web Development eBook"
+                    data-description="eBook written by Alexander Jack Hughes"
+                    data-image="/img/marketplace.png"
+                    data-locale="auto">
+                    // Stripe Checkout
+                </script>
+                <script>
+                    // Hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" name="button" class="btn btn-outline-dark text-white btn-lg">
+                    Purchase for $29
+                </button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="/img/book.png" alt="book" class="img-fluid">
+        </div>
+    </div>
+</section>
